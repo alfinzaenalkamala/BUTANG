@@ -66,5 +66,20 @@
       <option name="name" value="C:\Users\ALFIN ZAENAL KAMALA\AppData\Local\Android\Sdk\extras\android\m2repository" />
       <option name="url" value="file:/$PROJECT_DIR$/../../../ALFIN%20ZAENAL%20KAMALA/AppData/Local/Android/Sdk/extras/android/m2repository" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="C:\Users\LENOVO PC\AppData\Local\Android\Sdk\extras\m2repository" />
+      <option name="name" value="C:\Users\LENOVO PC\AppData\Local\Android\Sdk\extras\m2repository" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../LENOVO%20PC/AppData/Local/Android/Sdk/extras/m2repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="C:\Users\LENOVO PC\AppData\Local\Android\Sdk\extras\google\m2repository" />
+      <option name="name" value="C:\Users\LENOVO PC\AppData\Local\Android\Sdk\extras\google\m2repository" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../LENOVO%20PC/AppData/Local/Android/Sdk/extras/google/m2repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="C:\Users\LENOVO PC\AppData\Local\Android\Sdk\extras\android\m2repository" />
+      <option name="name" value="C:\Users\LENOVO PC\AppData\Local\Android\Sdk\extras\android\m2repository" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../LENOVO%20PC/AppData/Local/Android/Sdk/extras/android/m2repository" />
+    </remote-repository>
   </component>
 </project>

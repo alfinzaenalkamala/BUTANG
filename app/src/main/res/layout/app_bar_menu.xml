@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.papb.butang.bukuhutang.menu"
-    android:background="@drawable/latar">
+    android:background="@color/birumuda"
+    tools:context="com.papb.butang.bukuhutang.menu">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -27,8 +27,9 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
+        android:layout_gravity="bottom|center"
         android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/biru"
         app:srcCompat="@drawable/tambah" />
 
 </android.support.design.widget.CoordinatorLayout>

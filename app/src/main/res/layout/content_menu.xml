@@ -4,18 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
     android:paddingLeft="25dp"
- android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.papb.butang.bukuhutang.menu"
     tools:showIn="@layout/app_bar_menu">
 
-    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Halo,"
+        android:textColor="@color/birumuda"
+        android:textColorHint="@color/birumuda"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="Selamat Datang di Butang"
+        android:textColor="@color/birumuda"
+        android:textColorHint="@color/birumuda"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
 
         android:layout_width="320dp"
         android:layout_height="100dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:shadowDx="0"
+        android:shadowDy="30"
+        app:cardBackgroundColor="@color/kuning1"
+        app:cardCornerRadius="15dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -24,89 +55,167 @@
             android:paddingTop="20dp">
 
             <TextView
-                android:id="@+id/txtincome"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="@string/income"
-                android:textSize="20dp"
-                android:fontFamily="@font/leter"
-                android:textAlignment="center"
-                tools:ignore="RtlCompat" />
-
-            <TextView
-                android:id="@+id/txtexp"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/txtincome"
-                android:text="@string/expenses"
-                android:textSize="20dp"
-                android:fontFamily="@font/leter"
-                android:textAlignment="center"
-                tools:ignore="RtlCompat" />
-
-            <TextView
                 android:id="@+id/txtbl"
-                android:layout_width="100dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/txtexp"
-                android:text="@string/balance"
-                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/antipasto"
 
-                android:fontFamily="@font/leter"
+                android:gravity="center_horizontal"
+                android:text="@string/total"
                 android:textAlignment="center"
-                tools:ignore="RtlCompat" />
-
-            <TextView
-                android:id="@+id/income"
-                android:layout_width="100dp"
-                android:layout_height="70dp"
-                android:layout_below="@id/txtincome"
-                android:text="17000"
-                android:textColor="@color/hitam"
-
-                android:textAlignment="center"
-                android:fontFamily="@font/leter"
-                android:textSize="26dp"
-                tools:ignore="RtlCompat" />
-
-            <TextView
-                android:id="@+id/expenses"
-                android:layout_width="100dp"
-                android:layout_height="70dp"
-                android:layout_below="@id/txtincome"
-                android:layout_toRightOf="@id/income"
-                android:text="17000"
-                android:textColor="@color/hitam"
-                android:fontFamily="@font/leter"
-                android:textSize="26dp"
-                android:textAlignment="center"
-                tools:ignore="RtlCompat" />
+                android:textColor="@color/hitam1"
+                android:textColorHint="@color/hitam1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/balance"
-                android:layout_width="100dp"
-                android:layout_height="70dp"
-                android:layout_below="@id/txtincome"
-                android:layout_toRightOf="@id/expenses"
-                android:text="17000"
-                android:textColor="@color/hitam"
-                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtbl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-1dp"
                 android:fontFamily="@font/leter"
-                android:textSize="26dp"
-                tools:ignore="RtlCompat" />
+                android:gravity="center_horizontal"
+                android:text="17000"
+                android:textAlignment="center"
+                android:textColor="@color/hitam1"
+                android:textColorHint="@color/hitam1"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="153dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="@color/merahmuda"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/txtincome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/antipasto"
+                    android:gravity="center_horizontal"
+                    android:text="@string/hutang"
+                    android:textAlignment="center"
+                    android:textColor="@color/hitam1"
+                    android:textColorHint="@color/hitam1"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/income"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtincome"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/leter"
+
+                    android:gravity="center_horizontal"
+                    android:text="17000"
+                    android:textAlignment="center"
+                    android:textColor="@color/hitam1"
+                    android:textColorHint="@color/hitam1"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="153dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="@color/hijau"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/txtexp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/antipasto"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lunas"
+                    android:textAlignment="center"
+                    android:textColor="@color/hitam1"
+                    android:textColorHint="@color/hitam1"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/expenses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtexp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/leter"
+                    android:gravity="center_horizontal"
+                    android:text="17000"
+                    android:textAlignment="center"
+                    android:textColor="@color/hitam1"
+                    android:textColorHint="@color/hitam1"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="DAFTAR HUTANG PEMBELI"
+        android:textColor="@color/hitam1"
+        android:textColorHint="@color/hitam1"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
     <android.support.v7.widget.CardView
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="vertical" />
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="15dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
     </android.support.v7.widget.CardView>
 
 </android.support.v7.widget.LinearLayoutCompat>

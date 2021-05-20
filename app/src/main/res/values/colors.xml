@@ -6,4 +6,15 @@
     <color name="putih">#ffff</color>
     <color name="colorTransparantWhite">#00cccccc</color>
     <color name="hitam">#000</color>
+    <color name="hitam1">#2A2D26</color>
+    <color name="birumuda">#f5f5f7</color>
+    <color name="birumuda1">#C4F2FF</color>
+    <color name="biru">#67AEEE</color>
+    <color name="ungu">#8F98FF</color>
+    <color name="orange">#FF5C00</color>
+    <color name="kuning">#FFB156</color>
+    <color name="kuning1">#FFC278</color>
+    <color name="abu">#979FAD</color>
+    <color name="merahmuda">#FF6174</color>
+    <color name="hijau">#A1ECBF</color>
 </resources>

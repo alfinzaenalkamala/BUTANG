@@ -7,15 +7,15 @@
         <item
             android:id="@+id/nav_incomegraf"
             android:icon="@drawable/income"
-            android:title="Income Graphic" />
+            android:title="@string/grafikhutang" />
         <item
             android:id="@+id/nav_expgaf"
             android:icon="@drawable/expanses"
-            android:title="Expenses Graphic" />
+            android:title="@string/grafiklunas" />
         <item
             android:id="@+id/nav_about"
             android:icon="@drawable/info"
-            android:title="About Us" />
+            android:title="@string/about_us" />
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/logout"

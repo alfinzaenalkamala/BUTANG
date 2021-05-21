@@ -12,10 +12,10 @@
     <string name="hutang">HUTANG</string>
     <string name="lunas">LUNAS</string>
     <string name="total">TOTAL HUTANG</string>
-    <string name="date">Date</string>
-    <string name="kategori">Category</string>
-    <string name="jumlah">Amount</string>
-    <string name="note">Note</string>
+    <string name="date">Tanggal</string>
+    <string name="kategori">Kategori</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="note">Catatan</string>
     <string name="create">Create Account</string>
     <string name="login">Login</string>
     <string name="submit">Submit</string>

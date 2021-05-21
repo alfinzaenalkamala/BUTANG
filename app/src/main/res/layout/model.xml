@@ -4,16 +4,18 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal" android:padding="10dp"
    >
+
     <TextView
-        android:textSize="18sp"
-        android:background="@drawable/tanggalan"
         android:id="@+id/txttgl"
         android:layout_width="70dp"
-        android:fontFamily="@font/leter"
-        android:textStyle="bold"
-        android:textColor="@color/putih"
         android:layout_height="20dp"
-        android:text="2018-10-15"/>
+        android:background="@drawable/tanggalan"
+        android:fontFamily="@font/leter"
+        android:gravity="center"
+        android:text="2018-10-15"
+        android:textColor="@color/putih"
+        android:textSize="18sp"
+        android:textStyle="bold" />
     <TextView
         android:id="@+id/txtket"
         android:layout_marginLeft="40dp"

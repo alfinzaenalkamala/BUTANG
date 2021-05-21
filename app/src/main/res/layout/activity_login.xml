@@ -42,7 +42,7 @@
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:background="@color/koromiko"
+        android:background="@drawable/roudedbtn"
         android:fontFamily="@font/leter"
         android:text="@string/login"
         android:textColor="@color/putih"
@@ -55,11 +55,11 @@
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_marginTop="18dp"
-        android:background="@color/abu"
+        android:background="@drawable/roudedbtn2"
         android:fontFamily="@font/leter"
         android:gravity="center"
         android:text="@string/create"
-        android:textColor="@color/hitam"
+        android:textColor="@color/putih"
         android:textSize="18sp"
         android:textStyle="bold" />
 

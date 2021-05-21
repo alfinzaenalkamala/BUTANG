@@ -1,5 +1,6 @@
 package com.papb.butang.bukuhutang;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,13 +9,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.papb.butang.bukuhutang.R;
-
 public class Register extends AppCompatActivity {
-    EditText edtEmail, edtPassword,edtUser, edtPass;
+    EditText edtEmail, edtPassword,edtUser, edtPass, etLogin;
     DatabaseHelper dbcenter;
-    Button tonReg;
+    Button tonReg, tonLogin;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +25,8 @@ public class Register extends AppCompatActivity {
         edtPass = (EditText) findViewById(R.id.editkonfpass);
         edtUser =(EditText) findViewById(R.id.edituser);
         tonReg=(Button) findViewById(R.id.buttonregister);
+        tonLogin=(Button) findViewById(R.id.btn_login);
+
         tonReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +51,13 @@ public class Register extends AppCompatActivity {
                     startActivity(mIntent);}//berpindah ke halaman login
             }
 
+        });
+        tonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mIntent = new Intent(getApplicationContext(),Login.class);
+                startActivity(mIntent);
+            }
         });
     }
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/birumuda"
+    android:background="@color/whitesmoke"
     android:orientation="vertical">
 
 
@@ -69,7 +69,7 @@
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:background="@color/orange"
+        android:background="@color/koromiko"
         android:fontFamily="@font/leter"
         android:text="@string/submit"
         android:textColor="@color/putih"
@@ -79,8 +79,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
-        android:layout_marginLeft="95dp"
+        android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
@@ -88,18 +87,22 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginTop="10dp"
+            android:layout_gravity="center|left"
             android:text="you have account? "
             android:textColor="@color/hitam"
             android:textColorHint="@color/hitam"
             android:textSize="14sp" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="39dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransparantWhite"
+            android:text="@string/login"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="10sp" />
+
     </LinearLayout>
 
 

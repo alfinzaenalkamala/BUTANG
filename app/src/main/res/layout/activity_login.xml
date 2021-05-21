@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/birumuda"
+    android:background="@color/whitesmoke"
     android:orientation="vertical">
 
 
@@ -11,19 +11,18 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        app:srcCompat="@drawable/iconbutang"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/iconbutang" />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="230dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
+        android:autofillHints=""
         android:hint="@string/email"
         android:textColor="@color/hitam"
-        android:textSize="15sp"
-        android:autofillHints=""
-        />
+        android:textSize="15sp" />
 
     <EditText
         android:id="@+id/password"
@@ -31,11 +30,11 @@
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        android:autofillHints=""
         android:hint="@string/password"
         android:inputType="textPassword"
         android:textColor="@color/hitam"
-        android:textSize="15sp"
-        android:autofillHints="" />
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/btnlogin"
@@ -43,7 +42,7 @@
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:background="@color/kuning"
+        android:background="@color/koromiko"
         android:fontFamily="@font/leter"
         android:text="@string/login"
         android:textColor="@color/putih"

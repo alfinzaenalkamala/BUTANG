@@ -41,7 +41,7 @@ public class Login extends AppCompatActivity {
                 String password = edtPassword.getText().toString();
                 if(email.equals("") || email.trim().isEmpty() || password.equals("") || password.trim().isEmpty()  ) {
                     //memastikan agar email tidak kosong
-                    Toast.makeText(Login.this,"Username Password harus diisi",Toast.LENGTH_LONG).show();
+                    Toast.makeText(Login.this,"Email dan Password harus diisi",Toast.LENGTH_LONG).show();
                 }else if(!(email.contains("@"))){
                     //memastikan email sesuai format
                     Toast.makeText(Login.this,"Masukkan format email yang benar",Toast.LENGTH_LONG).show();

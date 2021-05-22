@@ -16,7 +16,7 @@ import java.util.List;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     //mendeklarasikan semua kolom yang diperlukan di datasabe
-    public static String DATABASE_NAME = "money_manager";
+    public static String DATABASE_NAME = "buku_utang";
     private static final int DATABASE_VERSION = 1;
     private static final String TABLE_USER = "user";
     private static final String TABLE_TRANSAKSI= "transaksi";

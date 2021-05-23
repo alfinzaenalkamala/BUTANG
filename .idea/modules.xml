@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BUTANG.iml" filepath="$PROJECT_DIR$/.idea/modules/BUTANG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BUTANG.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BUTANG.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/BUTANG2.iml" filepath="$PROJECT_DIR$/.idea/modules/BUTANG2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BUTANG2.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BUTANG2.app.iml" />
     </modules>

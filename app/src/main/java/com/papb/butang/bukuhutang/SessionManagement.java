@@ -6,9 +6,6 @@ import android.content.SharedPreferences;
 
 import java.util.HashMap;
 
-/**
- * Created by Malak Diana Dewi on 09/12/2018.
- */
 
 public class SessionManagement {
     //Share preference

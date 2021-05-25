@@ -1,8 +1,6 @@
 package com.papb.butang.bukuhutang;
 
-/**
- * Created by Malak Diana Dewi on 05/12/2018.
- */
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

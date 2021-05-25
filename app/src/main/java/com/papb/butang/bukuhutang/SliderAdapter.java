@@ -13,9 +13,7 @@ import android.widget.TextView;
 
 import com.papb.butang.bukuhutang.R;
 import com.squareup.picasso.Picasso;
-/**
- * Created by Malak Diana Dewi on 13/12/2018.
- */
+
 
 public class SliderAdapter extends PagerAdapter {
     Context context;

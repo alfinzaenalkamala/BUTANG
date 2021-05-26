@@ -43,13 +43,13 @@ public class tambahCatatan extends AppCompatActivity {
     private Button btDatePicker;
     EditText tanggal, keterangan, jumlah;
     String mCurrentPhotoPath;
-    String jenis = "Income";
+    String jenis = "Hutang";
     SessionManagement sessionManagement;
     DatabaseHelper dbcenter;
 
 
-    private static final String[] pathIncome = {"Salary", "Bonus", "Allowance", "Petty cash", "Other"};
-    private static final String[] pathExpenses = {"Food", "Social Life", "Transportation", "Gift", "Healt", "Other"};
+    private static final String[] pathIncome = {"ATK","Alat Mandi","Sembako", "Camilan", "Minuman", "Perlengkapan Rumah Tangga", "Obat","Lainnya"};
+    private static final String[] pathExpenses = {"ATK","Alat Mandi","Sembako", "Camilan", "Minuman", "Perlengkapan Rumah Tangga", "Obat","Lainnya"};
     private final int versi = 1;
     private static final int CAMERA = 1;
     private static final int FILE = 2;
@@ -84,7 +84,7 @@ public class tambahCatatan extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                jenis = "Income";
+                jenis = "Hutang";
                 if (sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
                     addincome.setBackgroundDrawable(ContextCompat.getDrawable(context, R.color.colorPrimary));
                     addincome.setTextColor(ContextCompat.getColor(context, R.color.putih));
@@ -107,7 +107,7 @@ public class tambahCatatan extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                jenis = "Expenses";
+                jenis = "Lunas";
                 if (sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
                     addexp.setBackgroundDrawable(ContextCompat.getDrawable(context, R.color.colorPrimary));
                     addexp.setTextColor(ContextCompat.getColor(context, R.color.putih));

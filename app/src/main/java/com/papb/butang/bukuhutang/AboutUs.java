@@ -46,13 +46,13 @@ public class AboutUs extends AppCompatActivity {
         mBackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mSlideViewPager.setCurrentItem(mCurrentPage-1); //berpindah ke slide sebelumya
+                mSlideViewPager.setCurrentItem(mCurrentPage-1); //berpindah ke slide sebelumnya
             }
         });
         mNextBtn.setOnClickListener(new View.OnClickListener() { //pindah ke slide selanjutnya
             @Override
             public void onClick(View v) {
-                mSlideViewPager.setCurrentItem(mCurrentPage+1);
+                mSlideViewPager.setCurrentItem(mCurrentPage+1); //berpindah ke slide selanjutnya
             }
         });
 
@@ -110,7 +110,7 @@ public class AboutUs extends AppCompatActivity {
                 mBackBtn.setVisibility(View.INVISIBLE);
                 mMapsBtn.setEnabled(false);
                 mMapsBtn.setVisibility(View.INVISIBLE);
-                mNextBtn.setText("Next");
+                mNextBtn.setText("Lanjut");
                 mBackBtn.setText("");
 
             }else if(i== mDots.length -1){
@@ -121,8 +121,8 @@ public class AboutUs extends AppCompatActivity {
                 mBackBtn.setVisibility(View.VISIBLE);
                 mMapsBtn.setEnabled(true);
                 mMapsBtn.setVisibility(View.VISIBLE);
-                mBackBtn.setText("Back");
-                mMapsBtn.setText("Find Us");
+                mBackBtn.setText("Kembali");
+                mMapsBtn.setText("Temukan Kami");
             }else{
 
                 // slide kedua menampilkan back dan next

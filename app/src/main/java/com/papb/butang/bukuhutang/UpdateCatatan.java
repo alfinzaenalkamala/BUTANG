@@ -35,14 +35,14 @@ public class UpdateCatatan extends AppCompatActivity {
     private Button btDatePicker , save;
     EditText tanggal, keterangan, jumlah;
     String imageFilePath;
-    String jenis = "Income";
+    String jenis = "Hutang";
     SessionManagement sessionManagement;
     DatabaseHelper dbcenter;
     Button back;
 
     //aray kategori dari income dan expenses
-    private static final String[] pathIncome = {"Salary", "Bonus", "Allowance", "Petty cash", "Other"};
-    private static final String[] pathExpenses = {"Food", "Social Life", "Transportation", "Gift", "Healt", "Other"};
+    private static final String[] pathIncome = {"ATK","Alat Mandi","Sembako", "Camilan", "Minuman", "Perlengkapan Rumah Tangga", "Obat","Lainnya"};
+    private static final String[] pathExpenses = {"ATK","Alat Mandi","Sembako", "Camilan", "Minuman", "Perlengkapan Rumah Tangga", "Obat","Lainnya"};
     private final int versi = 1;
     String kat, id;
 
@@ -79,8 +79,8 @@ public class UpdateCatatan extends AppCompatActivity {
         jenis = getIntent().getStringExtra("jenis");
 
 
-        if (jenis.equals("Income")) {
-            jenis = "Income";
+        if (jenis.equals("Hutang")) {
+            jenis = "Hutang";
             if (sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
 
             } else {
@@ -108,7 +108,7 @@ public class UpdateCatatan extends AppCompatActivity {
                 kategori.setSelection(select);
             }
         }else{
-            jenis = "Expenses";
+            jenis = "Lunas";
             if (sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
 
 
@@ -139,7 +139,7 @@ public class UpdateCatatan extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                jenis = "Income";
+                jenis = "Hutang";
                 if (sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
 
                 } else {
@@ -161,7 +161,7 @@ public class UpdateCatatan extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                jenis = "Expenses";
+                jenis = "Lunas";
                 if (sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
                     addexp.setBackgroundDrawable(ContextCompat.getDrawable(context, R.color.colorPrimary));
                     addexp.setTextColor(ContextCompat.getColor(context, R.color.putih));

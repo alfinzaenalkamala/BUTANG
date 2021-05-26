@@ -98,9 +98,9 @@ public class LihatCatatan extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder alert= new AlertDialog.Builder(LihatCatatan.this);
-                alert.setTitle("Delete"); //mengatur judul
-                alert.setMessage("Are you sure you want to delete this one?"); //mengatur isi pesan
-                alert.setPositiveButton("Yes", new DialogInterface.OnClickListener(){ //jika memilih Yes maka data akan terhapus
+                alert.setTitle("Hapus"); //mengatur judul
+                alert.setMessage("Apakah anda yakin untuk menghapusnya?"); //mengatur isi pesan
+                alert.setPositiveButton("Iya", new DialogInterface.OnClickListener(){ //jika memilih Yes maka data akan terhapus
 
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -111,7 +111,7 @@ public class LihatCatatan extends AppCompatActivity {
                         startActivity(m);
                     }
                 });
-                alert.setNegativeButton("No", new DialogInterface.OnClickListener(){ //jika memilih tidak akan menutup kotak dialog
+                alert.setNegativeButton("Tidak", new DialogInterface.OnClickListener(){ //jika memilih tidak akan menutup kotak dialog
 
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

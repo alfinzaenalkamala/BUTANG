@@ -77,7 +77,7 @@ public class GraphExpenses extends AppCompatActivity {
 
             PieChartData pieChartData = new PieChartData(pieData);
             pieChartData.setHasLabels(true).setValueLabelTextSize(14);
-            pieChartData.setHasCenterCircle(true).setCenterText1("Expenses").setCenterText1FontSize(20).setCenterText1Color(Color.parseColor("#0097A7"));
+            pieChartData.setHasCenterCircle(true).setCenterText1("Lunas").setCenterText1FontSize(20).setCenterText1Color(Color.parseColor("#0097A7"));
             pieChartView.setPieChartData(pieChartData);
         }
 

@@ -33,16 +33,16 @@ public class SliderAdapter extends PagerAdapter {
 
     //menyimpan text untuk ditampilkan pada slide view
     public String[] slide_headings={
-            "Ferdiana R.C",
-            "Malak Diana D.",
-            "POLINEMA"
+            "Butang (Buku Hutang)",
+            "TIM LULUS CEPAT",
+            "PAPB B FILKOM UB"
     };
 
     //menyimpan text untuk ditampilkan pada slide view
     public  String[] slide_descs = {
-            "Jika Anda benar-benar bisa menghitung uang Anda, maka Anda bukan orang kaya.",
+            "Buku Utang (Butang) adalah Aplikasi untuk pencatatan transaksi secara hutang yang dimana aplikasi ini dapat menyimpan data hutang yang telah dilakukan.  untuk pembeli setiap transaksi pembelian, Banyak dari toko-toko melakukan pencatatan transaksi hutang dengan cara manual, hal tersebut mempunyai kekurangan seperti catatan yang hilang, bukti transaksi hanya sebatas mencatat, dan keefektifan dalam melakukan pencarian data si penghutang.",
             "Waktu lebih berarti daripada uang. Anda dapat mendapatkan lebih banyak uang, tetapi Anda tidak dapat mendapatkan lebih banyak waktu.",
-            "Jl. Soekarno Hatta No.09, Jatimulyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65141"
+            "Jalan Veteran No.8, Ketawanggede, Kecamatan Lowokwaru, Ketawanggede, Kec. Lowokwaru, Kota Malang, Jawa Timur 65145"
     };
 
 

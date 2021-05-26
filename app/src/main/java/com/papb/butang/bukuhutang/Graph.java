@@ -53,7 +53,7 @@ public class Graph extends AppCompatActivity {
             final HashMap<String, String> user = sessionManagement.getUserInformation(); 
 
             SQLiteDatabase db = dbcenter.getReadableDatabase();
-            cursor = db.rawQuery("SELECT SUM(jumlah) as total, kategori FROM transaksi WHERE id_user = '" + user.get(sessionManagement.KEY_ID_USER) + "' and jenis = 'Income' group by kategori", null);
+            cursor = db.rawQuery("SELECT SUM(jumlah) as total, kategori FROM transaksi WHERE id_user = '" + user.get(sessionManagement.KEY_ID_USER) + "' and jenis = 'Hutang' group by kategori", null);
             cursor.moveToFirst();
 
             for (int cc = 0; cc < cursor.getCount(); cc++) {
@@ -77,7 +77,7 @@ public class Graph extends AppCompatActivity {
 
             PieChartData pieChartData = new PieChartData(pieData);
             pieChartData.setHasLabels(true).setValueLabelTextSize(14);
-            pieChartData.setHasCenterCircle(true).setCenterText1("Hutang").setCenterText1FontSize(20).setCenterText1Color(Color.parseColor("#0097A7"));
+            pieChartData.setHasCenterCircle(true).setCenterText1("Hutang").setCenterText1FontSize(20).setCenterText1Color(Color.parseColor("#E45D68"));
             pieChartView.setPieChartData(pieChartData);
         }
 

@@ -26,9 +26,9 @@ public class SliderAdapter extends PagerAdapter {
 
 //menyimpan url untuk picaso untuk ditampilkan pada slide view
     public String[] slide_image={
-            "https://img.icons8.com/color/1600/avatar.png",
-            "https://cdn.iconscout.com/icon/free/png-256/avatar-369-456321.png",
-            "http://2.bp.blogspot.com/-47EoU2cz1cg/UNSDP2ESFEI/AAAAAAAAISU/xwkN6d7TWHo/s320/LOGO+POLITEKNIK+NEGERI+MALANG.png"
+            "https://github.com/alfinzaenalkamala/BUTANG/blob/master/app/src/main/res/drawable/iconbutang.png",
+            "https://cdn.pixabay.com/photo/2015/02/27/08/12/members-651819_960_720.png",
+            "https://lh3.googleusercontent.com/proxy/Ui753s5vKqKKEnFzVAiE68N5UEmJ9JH-hrJ1ao5aaMyvOK6askmcfy9GOvsmm6Ym2izHaR1vho6KcmuAKs2acmCL4aMJvZU1x9kgC0BoOQ1LV221TrC8fh1LLSpHA2rL"
     };
 
     //menyimpan text untuk ditampilkan pada slide view
@@ -40,8 +40,8 @@ public class SliderAdapter extends PagerAdapter {
 
     //menyimpan text untuk ditampilkan pada slide view
     public  String[] slide_descs = {
-            "Buku Utang (Butang) adalah Aplikasi untuk pencatatan transaksi secara hutang yang dimana aplikasi ini dapat menyimpan data hutang yang telah dilakukan.  untuk pembeli setiap transaksi pembelian, Banyak dari toko-toko melakukan pencatatan transaksi hutang dengan cara manual, hal tersebut mempunyai kekurangan seperti catatan yang hilang, bukti transaksi hanya sebatas mencatat, dan keefektifan dalam melakukan pencarian data si penghutang.",
-            "Waktu lebih berarti daripada uang. Anda dapat mendapatkan lebih banyak uang, tetapi Anda tidak dapat mendapatkan lebih banyak waktu.",
+            "Buku Utang (Butang) adalah Aplikasi untuk pencatatan transaksi secara hutang yang dimana aplikasi ini dapat menyimpan data hutang yang telah dilakukan.",
+            "Javier Ardra Figo, Abdiel Wahyu Ramadhyono, Alfin Zaenal Kamala, Ahmad Wildan Jauhari",
             "Jalan Veteran No.8, Ketawanggede, Kecamatan Lowokwaru, Ketawanggede, Kec. Lowokwaru, Kota Malang, Jawa Timur 65145"
     };
 

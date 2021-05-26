@@ -101,12 +101,12 @@
                 android:layout_height="40dp"
                 android:fontFamily="@font/leter"
                 android:gravity="center"
-                android:text="Date"
+                android:text="@string/date"
                 android:textAlignment="center"
+                android:textColor="@color/hitam"
                 android:textSize="18dp"
-                android:textStyle="bold"
 
-                />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/date"
@@ -130,8 +130,9 @@
                 android:layout_below="@id/txtdate"
                 android:fontFamily="@font/leter"
                 android:gravity="center"
-                android:text="Category"
+                android:text="@string/kategori"
                 android:textAlignment="center"
+                android:textColor="@color/hitam"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -150,8 +151,9 @@
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/leter"
                 android:gravity="center"
-                android:text="Amount"
+                android:text="@string/jumlah"
                 android:textAlignment="center"
+                android:textColor="@color/hitam"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
@@ -185,8 +187,9 @@
                 android:layout_height="50dp"
                 android:fontFamily="@font/leter"
                 android:gravity="center"
-                android:text="Note"
+                android:text="@string/note"
                 android:textAlignment="center"
+                android:textColor="@color/hitam"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 

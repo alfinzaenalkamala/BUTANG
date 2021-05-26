@@ -129,7 +129,7 @@ public class tambahCatatan extends AppCompatActivity {
             }
         });
 
-        dateFormatter = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
+        dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
 
         tvDateResult = (EditText) findViewById(R.id.date);
         btDatePicker = (Button) findViewById(R.id.calendar);

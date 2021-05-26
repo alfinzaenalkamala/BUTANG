@@ -63,7 +63,7 @@ public class menu extends AppCompatActivity implements NavigationView.OnNavigati
             int i = 0;
             int e = 0;
             //mengambil jumlah income user dari sqlite
-            cursor = db.rawQuery("SELECT SUM(jumlah) FROM transaksi WHERE id_user = '" + user.get(sessionManagement.KEY_ID_USER) + "' and jenis = 'Income'", null);
+            cursor = db.rawQuery("SELECT SUM(jumlah) FROM transaksi WHERE id_user = '" + user.get(sessionManagement.KEY_ID_USER) + "' and jenis = 'Hutang'", null);
             cursor.moveToFirst();
             if (cursor.getCount() > 0) //jika hasil query tidak kosong
             {
@@ -78,7 +78,7 @@ public class menu extends AppCompatActivity implements NavigationView.OnNavigati
 
             }
             //mengambil jumlah expenses user dari sqlite
-            cursor = db.rawQuery("SELECT SUM(jumlah) FROM transaksi WHERE id_user = '" + user.get(sessionManagement.KEY_ID_USER) + "' and jenis = 'Expenses'", null);
+            cursor = db.rawQuery("SELECT SUM(jumlah) FROM transaksi WHERE id_user = '" + user.get(sessionManagement.KEY_ID_USER) + "' and jenis = 'Lunas'", null);
             cursor.moveToFirst();
             if (cursor.getCount() > 0) //jika hasil query tidak kosong
             {

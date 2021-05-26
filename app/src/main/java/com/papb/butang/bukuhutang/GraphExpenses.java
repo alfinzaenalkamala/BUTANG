@@ -52,7 +52,7 @@ public class GraphExpenses extends AppCompatActivity {
             // pieData.add(new SliceValue(60, Color.MAGENTA).setLabel("Q4: $28"));
 
             SQLiteDatabase db = dbcenter.getReadableDatabase();
-            cursor = db.rawQuery("SELECT SUM(jumlah) as total, kategori FROM transaksi WHERE id_user = '" + user.get(sessionManagement.KEY_ID_USER) + "' and jenis = 'Expenses' group by kategori", null);
+            cursor = db.rawQuery("SELECT SUM(jumlah) as total, kategori FROM transaksi WHERE id_user = '" + user.get(sessionManagement.KEY_ID_USER) + "' and jenis = 'Lunas' group by kategori", null);
             cursor.moveToFirst();
 
             for (int cc = 0; cc < cursor.getCount(); cc++) {
@@ -77,7 +77,7 @@ public class GraphExpenses extends AppCompatActivity {
 
             PieChartData pieChartData = new PieChartData(pieData);
             pieChartData.setHasLabels(true).setValueLabelTextSize(14);
-            pieChartData.setHasCenterCircle(true).setCenterText1("Lunas").setCenterText1FontSize(20).setCenterText1Color(Color.parseColor("#0097A7"));
+            pieChartData.setHasCenterCircle(true).setCenterText1("Lunas").setCenterText1FontSize(20).setCenterText1Color(Color.parseColor("#50DE89"));
             pieChartView.setPieChartData(pieChartData);
         }
 
